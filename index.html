@@ -10,24 +10,46 @@
     <title>Log In | Page</title>
 </head>
 <body>
-    <h1><b><center>Log In </center></b></h1>
-    <br><br>
-    <input type="text" id="email" placeholder="Type your E-mail Address">
-    <br><br>
-    <input type="password" id="password" placeholder="Typr your Password">
-    <br><br>
-    <button onclick="logIn()">Log In</button>
+    <fieldset>
+     
+        <legend><h1><b> LOG IN </b></h1></legend>
+    
+    
+    <center><form action="">
+    <h1><b><center>LOG IN </center></b></h1>
+    
     <br>
     
-    <button onclick="forgetPass()">Forget Password</button>
-    <button onclick="loginWithGoogle()">Login with Google</button>
-    <button onclick="loginWithGithub()">Login with Github</button>
+    <input type="text" id="email" placeholder="Type your E-mail Address">
+    
+    <br><br>
+    
+    <input type="password" id="password" placeholder="Typr your Password">
+    
+    <br><br>
+    
+    <button onclick="logIn()" id="continue">Log In</button>
+    <br>
+    
+
+    <ul>
+        <li><button id="continueSmall" onclick="forgetPass()">Forget Password</button></li>
+        <li><button id="continueSmall" onclick="loginWithGoogle()">Login With Google</button></li>
+        <li><button id="continueSmall" onclick="loginWithGithub()">Login With Github</button></li>
+    </ul>
     
     
     
-    <a href="signup.html">create a new Account</a>
     
     
+    
+    <a href="signup.html">Create A New Account</a>
+
+
+    </form></center>
+
+
+    </fieldset>
     
     
     <script src="app.js"></script>
